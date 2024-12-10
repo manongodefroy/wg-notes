@@ -18,10 +18,10 @@ function App() {
 
   const [status, setStatus] = useState<string | undefined>("unknown status");
 
-  const {user, conversation} = useHelpScoutContext()
+  const { user, conversation } = useHelpScoutContext();
   useEffect(() => {
-    setUserEmail(user?.email)
-    setStatus(conversation?.status)
+    setUserEmail(user?.email);
+    setStatus(conversation?.status);
   }, [user, conversation]);
 
   function onClick() {
@@ -34,9 +34,9 @@ function App() {
   return (
     <div className="App" ref={appRef}>
       <DefaultStyle />
-      <Heading level="h1">Hi, {userEmail}</Heading>
+      {/* <Heading level="h1">Hi, {userEmail}</Heading>
       <Text>The conversation is {status}</Text>
-      <br />
+      <br /> */}
       <Button size="sm" onClick={onClick}>
         Click me
       </Button>
