@@ -2,3 +2,78 @@ body {
   margin: 0;
   display: flex;
 }
+
+/* General classes */
+.noMargin {
+  margin: 0;
+}
+
+ul.unstyled,
+ol.unstyled {
+  list-style: none;
+  margin-left: 0;
+}
+
+.divider {
+  border-top: 1px solid;
+  margin-top: 10px; /* Adjust spacing as needed */
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.muted {
+  color: gray;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.orange {
+  color: orange;
+}
+
+.purple {
+  color: purple;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+/* Badge classes */
+span.badge {
+  background-color: gray;
+  color: white;
+  padding: 2px 4px; /* Adjust for desired size */
+  border-radius: 4px;
+  font-size: 0.875em; /* Adjust for desired size */
+  display: inline-block;
+}
+
+span.badge.blue {
+  background-color: blue;
+}
+
+span.badge.green {
+  background-color: green;
+}
+
+span.badge.red {
+  background-color: red;
+}
+
+span.badge.orange {
+  background-color: orange;
+}
+
+span.badge.purple {
+  background-color: purple;
+}
